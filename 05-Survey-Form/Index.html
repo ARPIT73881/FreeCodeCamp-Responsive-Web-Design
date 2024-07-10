@@ -1,0 +1,89 @@
+<!DOCTYPE html
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            FreeCodeCamp Survey Form
+        </title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1 id="title">
+            FreeCodeCamp Survey Form
+        </h1>
+        <p id="description">
+            Thank you for taking the time to  help us improve the platform
+        </p>
+        <form id="survey-form">
+            <label id="name-label"  for="name">Name :<br> 
+                <input id="name" type="text" required placeholder="Enter your name" >
+            </label>
+            <br><br>
+            <label id="email-label" for="email">Email :<br> 
+                <input id="email" type="email" required placeholder="Enter your email" >
+            </label>
+            <br><br>
+            <label id="number-label" for="number">Age :<br> 
+                <input id="number" type="number" required placeholder="Age" min="10" max="100">
+            </label>
+            <br><br>
+            <div>
+              <p>Which option is best for you</p>
+            <select id="dropdown">
+                <option disabled selected >Select an option</option>
+                <option> Student</option>
+                <option> Full time learner</option>
+                <option> Full time job</option>
+            </select>
+            </div>
+            <br>
+            <div class="group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label>
+                    <input name="user" value="definitely" type="radio" class="input-radio" checked/>
+                    Definitely
+                </label>
+                <label>
+                    <input name="user" value="maybe" type="radio" class="input-radio"/>
+                    Maybe
+                </label>
+                <label>
+                    <input name="user" value="not-sure" type="radio" class="input-radio"/>
+                    Not sure
+                </label>
+            </div> 
+            <br>
+            <div class="improve">
+                <p>What would you like to improve</p>
+                <label>
+                    <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"/>
+                    Front-end Projects
+                </label>
+                <br>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox"/>
+                    Back-end Projects
+                </label>
+                <br>
+                <label>
+                    <input name="prefer" value="full-stack-projects" type="checkbox" class="input-checkbox"/>
+                    Full-stack Projects
+                </label>
+            </div>
+            <br>
+            <div class="group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+            <br>
+            <div class="group">
+                <input id="submit" type="submit" name="submit" value="submit">
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+body{
+    margin:0;
+    padding:0;
+    color:#fff;
+    background-color:#7373bb;
+    font-family:sans-serif;
+    box-sizing:border-box;
+  }
+  
+  h1 ,#description {
+    margin:20px;
+    text-align:center;
+  }
+  
+  #survey-form{
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    padding:25px;
+    border-radius:10px;
+    background-color:#2b2a4a;
+    width:70%;
+  }
+  
+  textarea{
+    width:100%;
+    height:80px;
+  }
+  
+   #submit{
+     background-color:#37af65;
+     text-align:center;
+     display:block;
+     margin:0 auto;
+     width:70%;
+     padding:10px;
+     cursor:pointer;
+   }
+  
+   input[type="text"],input[type="email"],input[type="number"],select{
+     width:100%;
+   }
+  
+   
