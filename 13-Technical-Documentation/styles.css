@@ -1,0 +1,110 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  color: #4d4e53;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+code {
+  font-size: 1.1rem;
+}
+
+section header {
+  font-size: 2.5rem;
+  color: #000;
+  margin-block: 2rem;
+}
+
+nav header {
+  font-family: Open Sans;
+  text-align: center;
+  font-size: 3.1rem;
+  color: #000;
+}
+
+nav ul {
+  list-style: none;
+  overflow-y: scroll;
+  height: 20rem;
+  border: 2px solid #4d4e53;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: #4d4e53;
+  cursor: pointer;
+  text-align: left;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid black;
+}
+
+/* responsive for the desktop devices */
+@media (min-width: 720px) {
+  body {
+    position: absolute;
+    display: flex;
+  }
+
+  #navbar {
+    margin-right: 2rem;
+    border-right: 3px solid rgba(0, 22, 22, 0.4);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+  }
+
+  #main-doc {
+    margin-left: 350px;
+    scroll-behavior: smooth;
+  }
+  nav ul {
+    border: none;
+    width: 300px;
+    height: 100vh;
+  }
+  nav ul li {
+    font-size: 2rem;
+  }
+
+  nav header {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid;
+    font-size: 3rem;
+  }
+
+  main header {
+    margin-left: 1rem;
+  }
+
+  main article {
+    margin-left: 2rem;
+  }
+
+  article p {
+    font-size: 1.7rem;
+  }
+
+  article li {
+    font-size: 1.5rem;
+  }
+
+  article code {
+    font-size: 1.2rem;
+  }
+}
