@@ -1,0 +1,200 @@
+:root {
+  --dark: hsl(240, 20%, 5%);
+  --white: hsl(0, 0%, 100%);
+  --red: hsl(342, 92%, 46%);
+  --grey: hsl(230, 12%, 10%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--white);
+  background-color: var(--grey);
+}
+
+/* ============== header section ==============*/
+.header {
+  background-color: var(--dark);
+  position: sticky;
+  width: 100%;
+  height: 70px;
+  top: 0;
+}
+
+/* navbar */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 70px;
+  gap: 16px;
+  margin-right: 16px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.navbar a:hover {
+  transform: scale(1.1);
+  color: var(--red);
+}
+
+/* ============== main section ============== */
+
+/* welcome section */
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 16px;
+  background-color: hsl(225, 5%, 17%);
+}
+
+.welcome-section h1 {
+  font-size: 4rem;
+}
+
+.welcome-section p {
+  color: var(--red);
+  font-size: 2rem;
+  font-style: italic;
+}
+
+/* projects section */
+
+.projects {
+  margin-bottom: 3rem;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.project-tile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+figure {
+  background-color: var(--dark);
+  padding: 16px;
+  border: 2px solid var(--white);
+  border-radius: 8px;
+  min-height: 100%;
+}
+
+figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin: 8px;
+  text-align: center;
+  font-size: 24px;
+  padding: 24px;
+}
+
+/* ============== footer section  ==============*/
+.footer {
+  /* position: relative; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 250px;
+  background-color: var(--dark);
+
+  margin-top: 24px;
+}
+
+.message h3 {
+  font-size: 3rem;
+}
+.message p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.footer-links a:hover {
+  transform: scale(1.1);
+  color: var(--red);
+}
+
+/* ============== Responsive ==============*/
+
+/* media 768px */
+@media (max-width: 768px) {
+  .project-tile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects h2 {
+    font-size: 2.4rem;
+  }
+}
+
+/* media 600px */
+@media (max-width: 600px) {
+  .navbar ul {
+    justify-content: center;
+  }
+  .project-tile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projects h2 {
+    font-size: 1.5rem;
+  }
+  .welcome-section h1 {
+    font-size: 3.3rem;
+  }
+  .welcome-section p {
+    font-size: 1.5rem;
+  }
+
+  .message h3 {
+    font-size: 2.5rem;
+  }
+  .message p {
+    font-size: 1rem;
+  }
+}
