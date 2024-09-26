@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-   <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank"><img src="https://i.ibb.co/6sz7WBF/fccwebdesign.png" alt="Main-Cover" border="0"></a>
+   <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank"><img src="https://github.com/user-attachments/assets/9e8bbe59-69e5-4eae-8dbb-a6bc0eac6e46" alt="Main-Cover" border="0"></a>
   <br />
 
 # Responsive Web Design 
