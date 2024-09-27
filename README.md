@@ -32,6 +32,6 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-## 🫡 Credits
+## <a name="credits"> 🫡 Credits</a>
 
 This repository was inspired by the work of [FreeCodeCamp](https://www.freecodecamp.org/learn). Their creativity and innovation motivated me to build my own version.
